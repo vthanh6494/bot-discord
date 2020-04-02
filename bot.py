@@ -3,12 +3,7 @@ import os
 import random
 from datetime import datetime
 
-def read_token():
-    with open('token', 'r') as f:
-        lines = f.readlines()
-        return lines[s].strip()
-
-token = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW0iw.tbFn8QG1vZ39T-0JDRYt7CSk6QE"
+token = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW2Zw.mMwiocitmV4RpVRGcNztDv3H2v8"
 
 client = discord.Client()
 

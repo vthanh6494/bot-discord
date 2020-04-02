@@ -6,9 +6,9 @@ from datetime import datetime
 def read_token():
     with open('token', 'r') as f:
         lines = f.readlines()
-        return lines[0].strip()
+        return lines[s].strip()
 
-token = read_token()
+token = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW0iw.tbFn8QG1vZ39T-0JDRYt7CSk6QE"
 
 client = discord.Client()
 

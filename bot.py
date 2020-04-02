@@ -3,7 +3,8 @@ import os
 import random
 from datetime import datetime
 
-token = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW8wg.RjItpoJEc21Our7MfVnNjcqhpTs"
+TOKEN = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW8wg.RjItpoJEc21Our7MfVnNjcqhpTs"
+GUILD = "BeAnhThongMinh"
 
 client = discord.Client()
 
@@ -33,4 +34,4 @@ async def on_message(message):
 
 
 
-client.run(token)
+client.run(TOKEN)

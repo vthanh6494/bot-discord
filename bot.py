@@ -34,8 +34,7 @@ async def on_message(message):
         await message.channel.send(response)
     elif current_time == '23:30':
         await message.channel.send("khuya roi, giai tan, di ngu thoi!!!")
-    elif 'raise-exception' in message.content :
-        raise discord.DiscordException
+
 
 
 

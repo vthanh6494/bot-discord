@@ -3,7 +3,7 @@ import os
 import random
 from datetime import datetime
 
-TOKEN = "NjkxNjM0Njg3MTA5NzU4OTc4.XoW8wg.RjItpoJEc21Our7MfVnNjcqhpTs"
+TOKEN = "NjkxNjM0Njg3MTA5NzU4OTc4.XoXATA.wx2qWs8mJnvym5naGdpkdk2jecM"
 GUILD = "BeAnhThongMinh"
 
 client = discord.Client()

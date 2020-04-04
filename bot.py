@@ -1,12 +1,27 @@
-import discord
 import os
+
+import discord
 import random
 from datetime import datetime
+from dotenv import load_dotenv
 
-TOKEN = "NjkxNjM0Njg3MTA5NzU4OTc4.XoXATA.wx2qWs8mJnvym5naGdpkdk2jecM"
-GUILD = "BeAnhThongMinh"
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
+
+@client.event
+async def on_ready():
+    for guild in client.guilds:
+        if guild.name == GUILD:
+            break
+
+    print(
+        f'{client.user} is connected to the following guild:\n'
+        f'{guild.name}(id: {guild.id})'
+    )
+
 
 @client.event
 async def on_message(message):
@@ -30,8 +45,6 @@ async def on_message(message):
         await message.channel.send(response)
     elif current_time == '23:30':
         await message.channel.send("khuya roi, giai tan, di ngu thoi!!!")
-
-
 
 
 client.run(TOKEN)
